@@ -23,3 +23,31 @@ Executam antes de algum comando, pode ser após tb.
 pre-commit: Fazer algo antes do commit
 pre-push: Se deu certo, teste.
 ---------------------------------------------------------------
+
+----------------------------Testes-----------------------------
+mocks: metodos falsos (similar aos spies e stud) ideal para
+um elemento falso, modificar tudo. multiplos comportamento
+Replicar algumas coisas do bd sem usar bd.
+
+spies: Vigiar informações, metodos, respostas. Callbacks
+
+stubs: substituim a funçã, troca comportamento. Forçar uma
+exceção, pular uma execução do bd. Simplifica teste assincrosno
+
+Chai: bdd, tdd. Mais completo
+
+                         **Rodando**
+no arquivo package.json colar
+"test": "./node_modules/.bin/mocha tests/**/*.spec.js"
+npm test
+	             **Resporters**
+npm test -- --reporters
+npm test -- --reporter=nyan     azul qtos teste pulou
+verde ok vermelho problemo.
+
+		**fail fast**
+Para no primeiro teste e quebra
+npm test -- --bail
+
+
+---------------------------------------------------------------
