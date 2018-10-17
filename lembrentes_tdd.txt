@@ -34,7 +34,10 @@ spies: Vigiar informações, metodos, respostas. Callbacks
 stubs: substituim a funçã, troca comportamento. Forçar uma
 exceção, pular uma execução do bd. Simplifica teste assincrosno
 
-Chai: bdd, tdd. Mais completo
+Chai: bdd, tdd. Mais completo. Responsavel por cada
+each
+
+fizzbuzz:
 
                          **Rodando**
 no arquivo package.json colar
@@ -49,5 +52,28 @@ verde ok vermelho problemo.
 Para no primeiro teste e quebra
 npm test -- --bail
 
+
+---------------------------------------------------------------
+
+-------------------------Code Coverage-------------------------
+Analisa todos os pedaços do seus teste. Analise se alguma
+parte do codigo não foi testado. Lembrar de criar no
+package.json
+npm i --save-dev nyc
+Colunas gerada do nyc: 
+ stmts: São linhas que estou rodando e testando
+ Branch: If e else se esta pegando
+ Funcs: Retorno das funções
+ Lines: Qtde de todas as linhas que estou cobrindo
+
+Criar no packge o nyc e deixar como abaixo.
+  "nyc": {
+    "reporter": ["text","html"],
+    "exclude": ["tests/**"]
+  },
+
+Consigo descobrir o quanto estou cobrindo do codigo.
+Gera tb uma pasta para analsiar algumas coisas.
+Posso colocar uma trava para subir o codigo, quero 80%
 
 ---------------------------------------------------------------

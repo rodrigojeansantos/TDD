@@ -22,7 +22,7 @@ describe('Main', () => {
 
         context('Case 2', () => {
             it('Estou no case 2', () => {
-                throw new Error('Erroooo')
+                //throw new Error('Erroooo')
             })            
         })   
 
